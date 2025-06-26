@@ -34,19 +34,24 @@ header {
 
 .card-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .article-card {
   max-width: 600px;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-right: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1em;
+  border: 2px solid lightgray;
+  border-bottom: 2px solid rgb(121, 119, 119);
+  border-right: 2px solid rgb(121, 119, 119);
 
-  border-bottom: 2px solid lightgray;
 }
 
 .main-img-container {
@@ -98,18 +103,3 @@ p.details-text {
   font-size: .625rem;
   max-width: 350px;
 }
-
-/*
-        <article className='article-card'>
-            <div className='main-img-container'>
-                <img className='main-img' src={data[0].img.src} alt={data[0].img.alt} />
-            </div>
-            <div className='card-details'>
-                <img className='marker' src={locationMarker} alt="map marker icon" />
-                <span className='country'>{data[0].country}</span>
-                <a href={data[0].googleMapsLink}>View on Google Maps</a>
-                <h2 className='details-title'>{data[0].title}</h2>
-                <p className='details-date'>{data[0].dates}</p>
-                <p className='details-text'>{data[0].text}</p>
-            </div>
-*/

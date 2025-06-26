@@ -6,10 +6,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className='card-container'>
-
-        <Entry />
-      </div>
+      <Entry />
     </>
   )
 }
