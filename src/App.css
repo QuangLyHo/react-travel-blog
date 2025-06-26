@@ -48,9 +48,10 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 1em;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-bottom: 2px solid rgb(121, 119, 119);
   border-right: 2px solid rgb(121, 119, 119);
+  border-radius: 10px;
 
 }
 
